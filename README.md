@@ -11,9 +11,13 @@ It will resume from wherever the last person left off. So **please commit & push
 `Just enter a single number from 1 (best) to 3 (garbage) and press enter.`
 
 ```text
-1. ⭐️ Top Quality: Impressive, clear, coherent, complete ideas. Please have a high bar for quality, about 20% of items should hit this quality. 
-2. 👍 Decent: Maybe not super impressive detail, but still generally clear and correct. Slightly incomplete sentences are ok, but if it's too random for you to understand, just delete it. About 50% of items shuold fit this quality.
-3. 🚫 To delete: Incomplete ideas, unrelated questions and answers, random or 'hallucinated' rambling. Roughly 30% should fit this quality. 
+1. ⭐️ Top Quality: Impressive, clear, coherent, complete ideas. 
+    Please have a high bar for quality, about 20% of items should hit this quality. 
+2. 👍 Decent: Maybe not super impressive detail, but still generally clear and correct. 
+    Slightly incomplete sentences are ok, but if it's too random for you to understand, 
+    just delete it. About 50% of items shuold fit this quality.
+3. 🚫 To delete: Incomplete ideas, unrelated questions and answers, random or 
+    'hallucinated' rambling. Roughly 30% should fit this quality. 
 ```
 
 3. To exit press `ctrl+c` (same on windows/mac/linux). Then **you must press `y` to save your changes**. Or you can press `n` to discard changes (there is no undo for this step!). 
