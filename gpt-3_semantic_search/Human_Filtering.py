@@ -30,7 +30,7 @@ class Human_Filtering():
       self.json_file_path = json_file_path
       self.QA_pairs = json.load(open(json_file_path))
     except FileNotFoundError:
-      print(f'{bcolors.FAIL}File not found. Please check the class variable `json_file_path`.{bcolors.ENDC}')
+      print(f'{bcolors.FAIL}Input file `{json_file_path}` not found. Please check the class variable `json_file_path`.{bcolors.ENDC}')
       exit(1)
     
     # if files don't exist, we start from scratch.
