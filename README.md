@@ -4,7 +4,7 @@
 
 It's very simple. Goal: Evaluate whether the _question_ and _answer_ answer are reasonable. 
 
-1. To start: `cd gpt-3_semantic_search && python Human_Filtering.py`
+1. To start: `cd human_data_review/gpt-3_semantic_search && python Human_Filtering.py`
 
 It will resume from wherever the last person left off. So **please commit & push as soon as you finish your work**. If you face merge conflicts, open up VS-Code and make sure to "accept both" changes. 
 
@@ -22,7 +22,7 @@ It will resume from wherever the last person left off. So **please commit & push
 
 3. To exit press `ctrl+c` (same on windows/mac/linux). Then **you must press `y` to save your changes**. Or you can press `n` to discard changes (there is no undo for this step!). 
 
-4. Immediately `commit` & `push` your changes so others can build on your work. 
+4. Immediately `git commit -a` & `git push` your changes so others can build on your work. 
 
 Thank you for your help!!
 For any help, email me kvday2@illinois.edu.
