@@ -18,7 +18,7 @@ class bcolors:
   UNDERLINE = '\033[4m'
 
 class Human_Filtering():
-  def __init__(self, json_file_path: str = 'GPT-3_generations_paragraph_level.json'):
+  def __init__(self, json_file_path: str = 'GPT-3_generations_section-level.json'):
     """
     Simply change the json_file_path to the path of the json file you want to evaluate (like GPT-3_semantic_search.json)
     Progress evaluating it is saved between runs. 
