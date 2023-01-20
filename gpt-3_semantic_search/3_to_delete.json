@@ -1,1 +1,401 @@
-[]
+[
+  {
+    "textbook-paragraph": "Before we begin exploring designs, let's talk briefly about the general\napproach that we take when designing an FSM.  We follow a six-step\nprocess:{-8pt}",
+    "GPT-3-Generations": {
+      "question": "\n\n1. {-8pt}\n2. {-8pt}\n3. {-8pt}\n4. {-8pt}\n5. {-8pt}\n6. \n\nWhat is the general approach that is taken when designing an FSM? \nA) We follow a six step process that includes real world curiosity and factual reasoning. \nB) We take a general approach that includes reasoning and procedural steps to explore designs. \nC) We follow a six step process that includes precise and factual questions about the context. \nD) We take a general approach that includes all the possibilities of the context to explore designs.",
+      "answer": "\nB) We take a general approach that includes reasoning and procedural steps to explore designs."
+    }
+  },
+  {
+    "textbook-paragraph": "Step {step-io} begins to formalize the model, starting with its\ninput and output behavior.  If we eventually plan to develop an\nimplementation of our FSM as a digital system (which is not the \nonly choice, of course!), all input and output\nmust consist of bits.  Often, input and/or output specifications\nmay need to match other digital systems to which we plan to connect\nour FSM.  In fact, { most problems in developing large digital systems\ntoday arise because of incompatibilities when composing two or more\nseparately designed pieces} (or { modules}) into an integrated system.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the most likely reason for incompatibilities when composing two or more separately designed pieces into an integrated system?\n\nA) Lack of standardization in design\nB) Incompatibility in the digital systems being connected\nC) Poor planning in the development process\nD) None of the above",
+      "answer": "\nB) Incompatibility in the digital systems being connected"
+    }
+  },
+  {
+    "textbook-paragraph": "In Step {step-repn}, we select an internal representation\nfor the bits necessary to encode the state of our FSM.  In practice,\nfor small designs, this representation can be selected by a computer \nin such a way as to optimize the implementation.  However, for large\ndesigns, such as the LC-3 instruction set architecture that we\nstudy later in this class, humans do most of the work by hand.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhich of the following is not a step in the process of encoding the state of an FSM?\nA) Select an internal representation for the bits necessary to encode the state of our FSM\nB) In practice, for small designs, this representation can be selected by a computer \nC) For large designs, such as the LC-3 instruction set architecture that we study later in this class, humans do most of the work by hand.\nD) Optimize the implementation",
+      "answer": "\nC) For large designs, such as the LC-3 instruction set architecture that we study later in this class, humans do most of the work by hand."
+    }
+  },
+  {
+    "textbook-paragraph": "In Step {step-repn}, we select an internal representation\nfor the bits necessary to encode the state of our FSM.  In practice,\nfor small designs, this representation can be selected by a computer \nin such a way as to optimize the implementation.  However, for large\ndesigns, such as the LC-3 instruction set architecture that we\nstudy later in this class, humans do most of the work by hand.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does one select an internal representation for the bits necessary to encode the state of our FSM?",
+      "answer": "\nThe internal representation for the bits necessary to encode the state of our FSM can be selected by a computer in such a way as to optimize the implementation."
+    }
+  },
+  {
+    "textbook-paragraph": "In the later examples in this set of notes, we show how even a \nsmall design can\nleverage meaningful information from the design when selecting\nthe representation, leading to an implementation that is simpler\nand is easier to build correctly.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhy is it important to have a small design when selecting the representation?",
+      "answer": "\nA small design is easier to understand and work with when selecting the representation. It is also simpler to build correctly."
+    }
+  },
+  {
+    "textbook-paragraph": "We also show how one can\nuse abstraction to simplify an implementation.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the purpose of abstraction in software development?",
+      "answer": "\nAbstraction is the process of hiding the details of an implementation in order to simplify the use of that implementation. \n\nIn software development, abstraction is used to hide the details of an implementation in order to make it easier to use. For example, when you use a library or an API, you don't need to know how it works internally; you just need to know how to use it."
+    }
+  },
+  {
+    "textbook-paragraph": "By Step {step-logic}, our design is a complete specification in\nterms of bits, and we need merely derive logic expressions for the\nnext-state variables and the output signals.  This process is no\ndifferent than for combinational logic, and should already be fairly \nfamiliar to you.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the next step in the process?\nA) Deriving logic expressions for the next-state variables and output signals.\nB) Familiarizing yourself with the process.\nC) Completing the specification in terms of bits.\nD) None of the above.",
+      "answer": "\n\nThe next step in the process is to derive logic expressions for the next-state variables and output signals."
+    }
+  },
+  {
+    "textbook-paragraph": "By Step {step-logic}, our design is a complete specification in\nterms of bits, and we need merely derive logic expressions for the\nnext-state variables and the output signals.  This process is no\ndifferent than for combinational logic, and should already be fairly \nfamiliar to you.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the process for deriving logic expressions for the next-state variables and output signals?",
+      "answer": "\nThe process for deriving logic expressions for the next-state variables and output signals is to first determine the desired output, then to determine what inputs are needed to generate that output. Next, the inputs are combined using Boolean algebra to create logic expressions for the next-state variables and output signals."
+    }
+  },
+  {
+    "textbook-paragraph": "By Step {step-logic}, our design is a complete specification in\nterms of bits, and we need merely derive logic expressions for the\nnext-state variables and the output signals.  This process is no\ndifferent than for combinational logic, and should already be fairly \nfamiliar to you.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does the design process differ for combinational logic versus sequential logic?",
+      "answer": "\nThe design process for sequential logic is similar to that of combinational logic, except that it takes into account the order in which the various steps must be executed. In addition, sequential logic designs often require the use of flip-flops or other storage elements to remember the state of the system from one clock cycle to the next."
+    }
+  },
+  {
+    "textbook-paragraph": "Finally, in Step {step-gates}, we translate our logic expressions\ninto gates and use flip-flops (or registers) to hold the internal\nstate bits of the FSM.  In later notes, we use more complex\nbuilding blocks when implementing an FSM, building up abstractions\nin order to simplify the design process in much the same way that\nwe have shown for combinational logic.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the final step in building a finite state machine?\nA) Translating logic expressions into gates\nB) Using flip-flops to hold internal state bits\nC) Implementing more complex building blocks \nD) Creating abstractions to simplify the design process",
+      "answer": "\nB) Using flip-flops to hold internal state bits"
+    }
+  },
+  {
+    "textbook-paragraph": "Finally, in Step {step-gates}, we translate our logic expressions\ninto gates and use flip-flops (or registers) to hold the internal\nstate bits of the FSM.  In later notes, we use more complex\nbuilding blocks when implementing an FSM, building up abstractions\nin order to simplify the design process in much the same way that\nwe have shown for combinational logic.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the final step in implementing an FSM?",
+      "answer": "\nThe final step in implementing an FSM is to translate the logic expressions into gates and use flip-flops (or registers) to hold the internal state bits of the FSM."
+    }
+  },
+  {
+    "textbook-paragraph": "Finally, in Step {step-gates}, we translate our logic expressions\ninto gates and use flip-flops (or registers) to hold the internal\nstate bits of the FSM.  In later notes, we use more complex\nbuilding blocks when implementing an FSM, building up abstractions\nin order to simplify the design process in much the same way that\nwe have shown for combinational logic.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does translating our logic expressions into gates help us build up abstractions to simplify the design process?",
+      "answer": "\nTranslating our logic expressions into gates helps us build up abstractions to simplify the design process by allowing us to use more complex building blocks when implementing an FSM. By using more complex building blocks, we can abstract away some of the details of the implementation, making the design process simpler."
+    }
+  },
+  {
+    "textbook-paragraph": "Let's begin with a two-bit Gray code counter with no inputs.\nAs we mentioned in Notes Set 2.1, a Gray code is a cycle over all\nbit patterns of a certain length in which consecutive patterns differ\nin exactly one bit.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhy is a Gray code a cycle over all bit patterns of a certain length?",
+      "answer": "\nA Gray code is a cycle over all bit patterns of a certain length because it contains all possible combinations of bits for that length. The reason for this is that each pattern in a Gray code differs from the previous pattern by only one bit. This means that all possible combinations of bits are represented in the Gray code."
+    }
+  },
+  {
+    "textbook-paragraph": "For simplicity, our first few examples are based on counters and\nuse the internal state\nof the FSM as the output values.  You should already know\nhow to design combinational logic for the outputs if it were necessary.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the output value of the FSM if the current state is s2 and the input is 1?\n\nA) The output value is 0.\nB) The output value is 1.\nC) The output value is 2.\nD) The output value is 3.",
+      "answer": "\nThe output value is 1."
+    }
+  },
+  {
+    "textbook-paragraph": "The inputs to a counter, if any, are typically limited to functions\nsuch as starting and stopping the counter, controlling the counting \ndirection, and resetting the counter to a particular state.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the input to a counter?\nA) A function to start and stop the counter\nB) A function to control the counting direction\nC) A function to reset the counter to a particular state\nD) All of the above",
+      "answer": "\nThe inputs to a counter are typically limited to functions such as starting and stopping the counter, controlling the counting direction, and resetting the counter to a particular state."
+    }
+  },
+  {
+    "textbook-paragraph": "A fully-specified transition diagram for \na two-bit Gray code counter appears below.\nWith no inputs, the states simply form a loop, with\nthe counter moving from one state to the next each cycle.",
+    "GPT-3-Generations": {
+      "question": "\n\n\nWhat is the output of this two-bit Gray code counter when it is reset?\n\nA. 01\nB. 10\nC. 11\nD. 00",
+      "answer": "\nThe output of this two-bit Gray code counter when it is reset is 00."
+    }
+  },
+  {
+    "textbook-paragraph": "A fully-specified transition diagram for \na two-bit Gray code counter appears below.\nWith no inputs, the states simply form a loop, with\nthe counter moving from one state to the next each cycle.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is a two-bit Gray code counter?",
+      "answer": "\n\nA two-bit Gray code counter is a digital circuit that counts in binary, with a twist. In a normal binary counter, each time the count reaches its maximum value (in this case, 2), it wraps around to 0 and starts counting again. With a Gray code counter, each time the count reaches its maximum value, it wraps around to the next lowest value instead of starting back at 0."
+    }
+  },
+  {
+    "textbook-paragraph": "Each state in the diagram is marked with the internal state value S_1S_0 \n(before the ``/'') and the output Z_1Z_0 (after the ``/''), which are \nalways equal for this counter.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhich state diagram correctly shows the sequence of states for a 3-bit up-down counter with an enable input E?\n\nA)\nB)\nC)\nD)\n\n                                                                                           \nA)",
+      "answer": "\nThe correct state diagram for a 3-bit up-down counter with an enable input E is shown in Diagram C."
+    }
+  },
+  {
+    "textbook-paragraph": "Each state in the diagram is marked with the internal state value S_1S_0 \n(before the ``/'') and the output Z_1Z_0 (after the ``/''), which are \nalways equal for this counter.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the output value Z_1Z_0 for the state S_1S_0 = 11?",
+      "answer": "\nThe output value Z_1Z_0 for the state S_1S_0 = 11 is 10."
+    }
+  },
+  {
+    "textbook-paragraph": "Based on the transition diagram, we can fill in the K-maps for the \nnext-state values S_1^+ and S_0^+ as shown to the right of the\ntransition diagram, then \nderive algebraic expressions in the usual way to obtain\nS_1^+=S_0 and S_0^+={{S_1}}.",
+    "GPT-3-Generations": {
+      "question": "\n\nBased on the transition diagram and the K-maps for the next-state values S_1^+ and S_0^+, what will be the value of S_0 when S_1 is 1?\n\nA) 0\nB) 1\nC) 2\nD) 3",
+      "answer": "\nThe value of S_0 when S_1 is 1 will be 0."
+    }
+  },
+  {
+    "textbook-paragraph": "Based on the transition diagram, we can fill in the K-maps for the \nnext-state values S_1^+ and S_0^+ as shown to the right of the\ntransition diagram, then \nderive algebraic expressions in the usual way to obtain\nS_1^+=S_0 and S_0^+={{S_1}}.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the algebraic expression for S_1^+?",
+      "answer": "\nThe algebraic expression for S_1^+ is S_0."
+    }
+  },
+  {
+    "textbook-paragraph": "Based on the transition diagram, we can fill in the K-maps for the \nnext-state values S_1^+ and S_0^+ as shown to the right of the\ntransition diagram, then \nderive algebraic expressions in the usual way to obtain\nS_1^+=S_0 and S_0^+={{S_1}}.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhy does the next state value S_1^+ equal the current state value S_0?",
+      "answer": "\nThe next state value S_1^+ equals the current state value S_0 because, according to the transition diagram, the only way to get to state 1 is from state 0."
+    }
+  },
+  {
+    "textbook-paragraph": "Now we'll add a third bit to our counter, but again use a Gray code\nas the basis for the state sequence.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does using a Gray code as the basis for the state sequence add a third bit to our counter?",
+      "answer": "\n\nThe Gray code is a sequence of numbers where each successive number has only one bit different from the previous number. This means that it is easy to add a third bit to our counter by using a Gray code as the basis for the state sequence."
+    }
+  },
+  {
+    "textbook-paragraph": "A fully-specified transition diagram for such a counter appears to \nthe right.  As before, with no inputs, the states simply form a loop, \nwith the counter moving from one state to the next each cycle.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhich of the following is a correct statement about the counter in the given context?\n\nA) The counter will move from one state to the next each cycle.\nB) With no inputs, the states will form a loop.\nC) The counter is fully specified by the transition diagram.\nD) The transition diagram appears to the right.",
+      "answer": "\nThe counter is fully specified by the transition diagram."
+    }
+  },
+  {
+    "textbook-paragraph": "A fully-specified transition diagram for such a counter appears to \nthe right.  As before, with no inputs, the states simply form a loop, \nwith the counter moving from one state to the next each cycle.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the purpose of a fully-specified transition diagram?",
+      "answer": "\n\nA fully-specified transition diagram is used to show the behavior of a system or device over time. In this case, it shows how a counter will behave when it receives no input."
+    }
+  },
+  {
+    "textbook-paragraph": "Each state in the diagram is marked with the internal state value S_2S_1S_0 \n(before ``/'') and the output Z_2Z_1Z_0 (after ``/'').",
+    "GPT-3-Generations": {
+      "question": " The current state is \nassumed to be S_2S_1S_0 = 000. The input X is 1 for all time.\n\nWhat will be the output when the state value is S_2S_1S_0 = 001?\n\nA) Z_2Z_1Z_0 = 001\nB) Z_2Z_1Z_0 = 010\nC) Z_2Z_1Z-00 = 100 \nD) Z-200Z-100Z-000",
+      "answer": "\nThe output when the state value is S_2S_1S_0 = 001 will be Z_2Z_1Z_0 = 010."
+    }
+  },
+  {
+    "textbook-paragraph": "Each state in the diagram is marked with the internal state value S_2S_1S_0 \n(before ``/'') and the output Z_2Z_1Z_0 (after ``/'').",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the internal state value and output for state \"q2\"?",
+      "answer": "\nThe internal state value and output for state \"q2\" is S_2S_1S_0/Z_2Z_1Z_0."
+    }
+  },
+  {
+    "textbook-paragraph": "Each state in the diagram is marked with the internal state value S_2S_1S_0 \n(before ``/'') and the output Z_2Z_1Z_0 (after ``/'').",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does the state transition diagram work?",
+      "answer": "\nThe state transition diagram works by mapping the current state to the next state based on the input. The output is generated based on the current state."
+    }
+  },
+  {
+    "textbook-paragraph": "Based on the transition diagram, we can fill in the K-maps for the \nnext-state values S_2^+, S_1^+, and S_0^+ as shown to the right, then \nderive algebraic expressions.  The results are more complex this \ntime.",
+    "GPT-3-Generations": {
+      "question": "\n\n1. What is the next state of S2 based on the transition diagram?\nA. 0\nB. 1\nC. 2\nD. 3",
+      "answer": "\n1. What is the next state of S2 based on the transition diagram?\n\nThe next state of S2 is 1."
+    }
+  },
+  {
+    "textbook-paragraph": "Based on the transition diagram, we can fill in the K-maps for the \nnext-state values S_2^+, S_1^+, and S_0^+ as shown to the right, then \nderive algebraic expressions.  The results are more complex this \ntime.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the next-state value for S_2^+?",
+      "answer": "\nThe next-state value for S_2^+ is 1 when both current inputs are 1, and 0 otherwise."
+    }
+  },
+  {
+    "textbook-paragraph": "Based on the transition diagram, we can fill in the K-maps for the \nnext-state values S_2^+, S_1^+, and S_0^+ as shown to the right, then \nderive algebraic expressions.  The results are more complex this \ntime.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow do we fill in the K-maps for the next-state values S_2^+, S_1^+, and S_0^+?",
+      "answer": "\nThe K-maps for the next-state values S_2^+, S_1^+, and S_0^+ can be filled in by looking at the transition diagram and determining which inputs will result in a '1' output for each of the next-state values. For example, for S_2^+, we can see that when A is '1' and B is '0', the output will be '1'. Therefore, we would fill in a '1' in the K-map for S_2^+ at the A=1, B=0 position. We can continue this process until all of the next-state values have been filled in."
+    }
+  },
+  {
+    "textbook-paragraph": "For our next-state logic, we obtain:\n{eqnarray*}\nS_2^+ &=& S_2 S_0 + S_1 {{S_0}} \nS_1^+ &=& {{S_2}} S_0 + S_1 {{S_0}} \nS_0^+ &=& {{S_2}} {{S_1}} + S_2 S_1\n{eqnarray*}",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the output of the state machine for the input sequence 1101?\n\nA) 0110\nB) 1001\nC) 0011\nD) 0100",
+      "answer": "\nThe output of the state machine for the input sequence 1101 is 1001."
+    }
+  },
+  {
+    "textbook-paragraph": "For our next-state logic, we obtain:\n{eqnarray*}\nS_2^+ &=& S_2 S_0 + S_1 {{S_0}} \nS_1^+ &=& {{S_2}} S_0 + S_1 {{S_0}} \nS_0^+ &=& {{S_2}} {{S_1}} + S_2 S_1\n{eqnarray*}",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the next state logic for S2, S1, and S0?",
+      "answer": "\nThe next state logic for S2, S1, and S0 is as follows:\n\nS2: S2S0 + S1S0\nS1: S2S0 + S1S0\nS0: S2S1 + S2S1"
+    }
+  },
+  {
+    "textbook-paragraph": "For our next-state logic, we obtain:\n{eqnarray*}\nS_2^+ &=& S_2 S_0 + S_1 {{S_0}} \nS_1^+ &=& {{S_2}} S_0 + S_1 {{S_0}} \nS_0^+ &=& {{S_2}} {{S_1}} + S_2 S_1\n{eqnarray*}",
+    "GPT-3-Generations": {
+      "question": "\n\nHow do we obtain the next-state logic?",
+      "answer": "\nThe next-state logic is obtained by multiplying the current state matrix by the transition matrix."
+    }
+  },
+  {
+    "textbook-paragraph": "Notice that the equations for S_2^+ and S_1^+ share a common term,\nS_1{{S_0}}.",
+    "GPT-3-Generations": {
+      "question": "\n\nThis is because:\n\nA) S_2^+ is the conjugate acid of S_1^-\nB) S_1^+ is the conjugate acid of S_0\nC) S_1^+ is the conjugate base of S_2^- \nD) All of the above.\n\nD) All of the above.",
+      "answer": "\nThe reason that the equations for S_2^+ and S_1^+ share a common term, S_1{{S_0}}, is because S_2^+ is the conjugate acid of S_1^- and S_1^+ is the conjugate acid of S_0."
+    }
+  },
+  {
+    "textbook-paragraph": "Notice that the equations for S_2^+ and S_1^+ share a common term,\nS_1{{S_0}}.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the term in the equation for S_2^+ that is also in the equation for S_1^+?",
+      "answer": "\nThe term in the equation for S_2^+ that is also in the equation for S_1^+ is S_1{{S_0}}."
+    }
+  },
+  {
+    "textbook-paragraph": "Notice that the equations for S_2^+ and S_1^+ share a common term,\nS_1{{S_0}}.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does the presence of a common term in two equations affect the way we solve for those equations?",
+      "answer": "\nThe presence of a common term in two equations does not affect the way we solve for those equations. We can still solve for the equations by using the same methods as before."
+    }
+  },
+  {
+    "textbook-paragraph": "Looking at the counter's implementation diagram, notice that the vertical\nlines carrying the current state values and their inverses back to the\nnext state\nlogic inputs have been carefully ordered to simplify\nunderstanding the diagram.  In particular, they are ordered from\nleft to right (on the left side of the figure) as \n{{S_0}}S_0{{S_1}}S_1{{S_2}}S_2.\nWhen designing any logic diagram, be sure to make use of a reasonable\norder so as to make it easy for someone (including yourself!) to read \nand check the correctness of the logic.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the order of the vertical lines in the figure?",
+      "answer": "\nThe vertical lines are ordered from left to right as S_0S_0S_1S_1S_2S_2."
+    }
+  },
+  {
+    "textbook-paragraph": "Early graphics systems used a three-bit red-green-blue (RGB) \nencoding for colors.  The color mapping for such a system is shown to\nthe right.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhich of the following is not a color that can be represented by this system?\nA. Black\nB. Green\nC. Yellow\nD. Blue\nE. Magenta\nF. White\n\nWhich of the following is not a color that can be represented by this system?\nA. Black  B. Green  C. Yellow   D. Blue   E. Magenta   F. White",
+      "answer": "\nThe color mapping for this system does not include black, yellow, blue, or magenta."
+    }
+  },
+  {
+    "textbook-paragraph": "Early graphics systems used a three-bit red-green-blue (RGB) \nencoding for colors.  The color mapping for such a system is shown to\nthe right.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the color mapping for a three-bit RGB encoding system?",
+      "answer": "\nThe color mapping for a three-bit RGB encoding system is as follows:\n\nRed: 000 -> 255\nGreen: 001 -> 191\nBlue: 010 -> 63\nCyan: 011 -> 31\nMagenta: 100 -> 159\nYellow: 101 -> 223\nWhite: 110 -> 239"
+    }
+  },
+  {
+    "textbook-paragraph": "Early graphics systems used a three-bit red-green-blue (RGB) \nencoding for colors.  The color mapping for such a system is shown to\nthe right.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does the three-bit RGB encoding system work?",
+      "answer": "\nThe three-bit RGB encoding system uses a three-bit code to represent the red, green, and blue components of a color. Each color is represented by a different combination of bits. For example, the color red can be represented by the code 000, green by001, and blue by 010."
+    }
+  },
+  {
+    "textbook-paragraph": "Imagine that you are charged with creating a counter to drive a light\nthrough a sequence of colors.  The light takes an RGB input as just\ndescribed, and the desired pattern is",
+    "GPT-3-Generations": {
+      "question": " to have the light turn on at a\nlow intensity for each color, then ramp up to full intensity over the\ncourse of five seconds, and then ramp back down to low intensity and off\nover the course of five seconds.  After each color has been displayed in\nthis manner, the next color in the sequence should be displayed.\n\nWhich of the following is not a necessary component of the circuit?\nA) A 555 Timer IC  B) A Resistor  C) An Inductor  D) A Capacitor  \n\nC) An Inductor",
+      "answer": "\nAn inductor is not a necessary component of the circuit."
+    }
+  },
+  {
+    "textbook-paragraph": "Imagine that you are charged with creating a counter to drive a light\nthrough a sequence of colors.  The light takes an RGB input as just\ndescribed, and the desired pattern is",
+    "GPT-3-Generations": {
+      "question": " for the light to transition from\nred, to green, and then to blue.\n\nWhat is the RGB input for the light?",
+      "answer": "\nThe RGB input for the light is 255, 0, 0 for red, 0, 255, 0 for green, and 0, 0, 255 for blue."
+    }
+  },
+  {
+    "textbook-paragraph": "Imagine that you are charged with creating a counter to drive a light\nthrough a sequence of colors.  The light takes an RGB input as just\ndescribed, and the desired pattern is",
+    "GPT-3-Generations": {
+      "question": " to have the light change to each\nof the colors in the sequence, one at a time, and then repeat.\n\nHow would you create a counter to drive a light through a sequence of colors?",
+      "answer": "\nTo create a counter to drive a light through a sequence of colors, I would use an RGB input. I would set the colors in the sequence as Red, Green, and Blue. Then, I would use a for loop to repeat the sequence."
+    }
+  },
+  {
+    "textbook-paragraph": "{off (black)     yellow     violet     green     blue}",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the order of colors in a rainbow?\n\nA) off (black), yellow, violet, green, blue\nB) yellow, green, blue, violet, off (black)\nC) green, blue, violet, off (black), yellow \nD) violet, blue, green , yellow ,off (black)",
+      "answer": "\nThe order of colors in a rainbow is: violet, blue, green , yellow ,off (black)."
+    }
+  },
+  {
+    "textbook-paragraph": "{off (black)     yellow     violet     green     blue}",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the order of the colors in the spectrum of visible light?",
+      "answer": "\nThe order of the colors in the spectrum of visible light is violet, blue, green, yellow and red."
+    }
+  },
+  {
+    "textbook-paragraph": "{off (black)     yellow     violet     green     blue}",
+    "GPT-3-Generations": {
+      "question": "\n\nWhy are there five colors in a traffic light?",
+      "answer": "\nThe traffic light is a universal symbol that is used to indicate when it is safe to cross the street. The five colors in a traffic light represent the following: red, yellow, green, blue, and violet. Each color has a specific meaning: \n\nRed: Stop \nYellow: Caution \nGreen: Go \nBlue: Proceed with caution \nViolet: Do not enter"
+    }
+  },
+  {
+    "textbook-paragraph": "You immediately recognize that you merely need a counter with five\nstates.  How many flip-flops will we need?  At least three, since\n_2 (5)=3.  Given that we need three flip-flops, \nand that the colors we need to produce as",
+    "GPT-3-Generations": {
+      "question": " outputs are black,\nwhite, and gray,\n\nHow many flip-flops are needed to create a counter with 5 states?",
+      "answer": "\nAt least three flip-flops are needed to create a counter with 5 states."
+    }
+  },
+  {
+    "textbook-paragraph": "You immediately recognize that you merely need a counter with five\nstates.  How many flip-flops will we need?  At least three, since\n_2 (5)=3.  Given that we need three flip-flops, \nand that the colors we need to produce as",
+    "GPT-3-Generations": {
+      "question": " output are green,\namber, and red, we can use a 2-input AND gate to control the red\nlight (see Figure 1).\n\nHow many flip-flops will be needed in order to create a counter with five states?",
+      "answer": "\nAt least three flip-flops will be needed in order to create a counter with five states."
+    }
+  },
+  {
+    "textbook-paragraph": "{c|l}\nRGB& color \n000& black\n001& blue\n010& green\n011& cyan\n100& red\n101& violet\n110& yellow\n111& white",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the color represented by the binary number \"111\"?\n\na) black\nb) blue\nc) green \nd) cyan \ne) red \nf) violet \ng) yellow \nh) white",
+      "answer": "\nThe color represented by the binary number \"111\" is white."
+    }
+  },
+  {
+    "textbook-paragraph": "{c|l}\nRGB& color \n000& black\n001& blue\n010& green\n011& cyan\n100& red\n101& violet\n110& yellow\n111& white",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the RGB color for black?",
+      "answer": "\nThe RGB color for black is 000."
+    }
+  },
+  {
+    "textbook-paragraph": "{c|l}\nRGB& color \n000& black\n001& blue\n010& green\n011& cyan\n100& red\n101& violet\n110& yellow\n111& white",
+    "GPT-3-Generations": {
+      "question": "\n\n\nHow does the RGB color model work?",
+      "answer": "\nThe RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue."
+    }
+  },
+  {
+    "textbook-paragraph": "outputs are all unique\nbit patterns, we can again choose to use the counter's internal \nstate directly as our output values.",
+    "GPT-3-Generations": {
+      "question": "\n\n1) What is the best way to generate outputs that are all unique bit patterns? \nA) Use a counter's internal state directly as our output values\nB) Use a random number generator\nC) Use a pre-determined sequence of values\nD) Use an algorithm that generates all possible bit patterns",
+      "answer": "\nA) Use a counter's internal state directly as our output values"
+    }
+  },
+  {
+    "textbook-paragraph": "outputs are all unique\nbit patterns, we can again choose to use the counter's internal \nstate directly as our output values.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the output of a bit pattern?",
+      "answer": "\nThe output of a bit pattern is the unique sequence of bits that it produces."
+    }
+  },
+  {
+    "textbook-paragraph": "outputs are all unique\nbit patterns, we can again choose to use the counter's internal \nstate directly as our output values.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhy are outputs all unique bit patterns?",
+      "answer": "\nThe outputs of a counter are all unique bit patterns because the output is determined by the number of clock pulses applied to the input. The number of clock pulses is directly related to the binary value of the output."
+    }
+  },
+  {
+    "textbook-paragraph": "A fully-specified transition diagram for our color sequencer\nappears to the right.  The states again form a loop,\nand are marked with the internal state value S_2S_1S_0 \nand the output RGB.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the output of the color sequencer when it is in state S_000?\nA) RGB=000\nB) RGB=001\nC) RGB=010\nD) RGB=011",
+      "answer": "\nThe output of the color sequencer when it is in state S_000 is RGB=000."
+    }
+  },
+  {
+    "textbook-paragraph": "A fully-specified transition diagram for our color sequencer\nappears to the right.  The states again form a loop,\nand are marked with the internal state value S_2S_1S_0 \nand the output RGB.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the output RGB for state S_2S_1S_0?",
+      "answer": "\nThe output RGB for state S_2S_1S_0 is R:255, G:191, B:63."
+    }
+  }
+]

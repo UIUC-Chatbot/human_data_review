@@ -1,1 +1,156 @@
-[]
+[
+  {
+    "textbook-paragraph": "This set of notes uses a series of examples to illustrate design principles \nfor the implementation of finite state machines (FSMs) using digital logic.\nWe begin with an overview of the design process for a digital FSM, from\nthe development of an abstract model through the implementation of\nfunctions for the next-state variables and output signals.\nOur first few examples cover only the concrete aspects:\nwe implement several counters, which illustrate the basic \nprocess of translating a concrete and complete state transition diagram\ninto an implementation based on flip-flops and logic gates.\nWe next consider a counter with a number of states that is not a power of\ntwo, with which we illustrate the need for FSM initialization.\n As part of solving the initialization problem, we also introduce \n a general form of selection logic called a multiplexer.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is a digital finite state machine?",
+      "answer": "\nA digital finite state machine is a digital circuit that can be in one of a finite number of states. The machine is usually initialized to a start state, and then transitions to other states based on inputs. Outputs are generated based on the current state."
+    }
+  },
+  {
+    "textbook-paragraph": "This set of notes uses a series of examples to illustrate design principles \nfor the implementation of finite state machines (FSMs) using digital logic.\nWe begin with an overview of the design process for a digital FSM, from\nthe development of an abstract model through the implementation of\nfunctions for the next-state variables and output signals.\nOur first few examples cover only the concrete aspects:\nwe implement several counters, which illustrate the basic \nprocess of translating a concrete and complete state transition diagram\ninto an implementation based on flip-flops and logic gates.\nWe next consider a counter with a number of states that is not a power of\ntwo, with which we illustrate the need for FSM initialization.\n As part of solving the initialization problem, we also introduce \n a general form of selection logic called a multiplexer.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhen is it necessary to use an FSM?",
+      "answer": "\nIt is necessary to use an FSM when the desired output cannot be achieved by using a simple combinational logic circuit. \n An FSM can be used to implement a sequential circuit, which has memory elements that store the present state of the machine.\n The output of an FSM depends on both the present inputs and past inputs (i.e., its present state)."
+    }
+  },
+  {
+    "textbook-paragraph": "We then consider the design process as a whole through a more general\nexample of a counter with multiple inputs to control its behavior. \nWe work from\nan abstract model down to an implementation, illustrating how semantic\nknowledge from the abstract model can be used to simplify the \nimplementation.  Finally, we illustrate how the choice of representation\nfor the FSM's internal state affects the complexity of the implementation.\nFortunately, designs that are more intuitive and easier for humans to\nunderstand also typically make the best designs in terms of \nother metrics, such as logic complexity.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the design process for a counter with multiple inputs to control its behavior?",
+      "answer": "\nThe design process for a counter with multiple inputs to control its behavior is as follows: \n\n1. First, an abstract model of the counter is created. This model captures the essential behavior of the counter, without worrying about implementation details. \n\n2. Next, this abstract model is used to generate a concrete implementation of the counter. This implementation can be in hardware or software, depending on the requirements of the system. \n\n3. Finally, the internal state of the FSM is represented in a way that makes it easy to understand and maintain. This representation can be in terms of a truth table, state diagram, or other suitable form."
+    }
+  },
+  {
+    "textbook-paragraph": "We then consider the design process as a whole through a more general\nexample of a counter with multiple inputs to control its behavior. \nWe work from\nan abstract model down to an implementation, illustrating how semantic\nknowledge from the abstract model can be used to simplify the \nimplementation.  Finally, we illustrate how the choice of representation\nfor the FSM's internal state affects the complexity of the implementation.\nFortunately, designs that are more intuitive and easier for humans to\nunderstand also typically make the best designs in terms of \nother metrics, such as logic complexity.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does the choice of representation for the FSM's internal state affect the complexity of the implementation?",
+      "answer": "\nThe choice of representation for the FSM's internal state affects the complexity of the implementation in a number of ways. Firstly, it can affect the number of states that need to be considered in the implementation. Secondly, it can affect the way in which state transitions are represented. And finally, it can affect the amount of memory required to store the FSM's internal state."
+    }
+  },
+  {
+    "textbook-paragraph": "Before we begin exploring designs, let's talk briefly about the general\napproach that we take when designing an FSM.  We follow a six-step\nprocess:{-8pt}",
+    "GPT-3-Generations": {
+      "question": "\n\n\nWhat is the six-step process for designing an FSM?",
+      "answer": "\nThe six-step process for designing an FSM is as follows:\n\n1. Identify the system inputs and outputs.\n2. Identify the system states.\n3. Identify the state transition rules.\n4. Identify the output generation rules.\n5. Draw the state transition diagram.\n6. Implement the FSM in hardware or software."
+    }
+  },
+  {
+    "textbook-paragraph": "{{}{}\n{}{}{}\n{develop an abstract model}{step-abs}\n{specify I/O behavior}{step-io}\n{complete the specification}{step-complete}\n{choose a state representation}{step-repn}\n{calculate logic expressions}{step-logic}\n{implement with flip-flops and gates}{step-gates}\n}\n{-8pt}",
+    "GPT-3-Generations": {
+      "question": "\n\n\nHow does one develop an abstract model?",
+      "answer": "\nThe first step in developing an abstract model is to specify the I/O behavior. This means specifying what inputs the system will accept and what outputs the system will produce. Next, the specification must be completed. This means specifying all of the requirements of the system in detail. Once the specification is complete, a state representation must be chosen. This will determine how the internal state of the system will be represented. Next, logic expressions must be calculated. These expressions will determine the output of the system based on its current state and input. Finally, the abstract model must be implemented with flip-flops and gates."
+    }
+  },
+  {
+    "textbook-paragraph": "In Step {step-abs}, we translate our description in human language\ninto a model with states and desired behavior.  At this stage, we \nsimply try to capture the intent of the description and are not\nparticularly thorough nor exact.",
+    "GPT-3-Generations": {
+      "question": "\n\nIn Step {step-abs}, what are we translating our description into?\nA. A model with states and desired behavior\nB. A human language model\nC. A precise and factual description\nD. An intent capture",
+      "answer": "\nA. A model with states and desired behavior"
+    }
+  },
+  {
+    "textbook-paragraph": "In Step {step-abs}, we translate our description in human language\ninto a model with states and desired behavior.  At this stage, we \nsimply try to capture the intent of the description and are not\nparticularly thorough nor exact.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow do we translate our description in human language into a model with states and desired behavior?",
+      "answer": "\nOne way to translate our description in human language into a model with states and desired behavior is to create a state machine. This state machine would have different states that represent the different steps in the process described. For each state, there would be a corresponding set of desired behaviors. These desired behaviors would be what we want the system to do when it is in that particular state."
+    }
+  },
+  {
+    "textbook-paragraph": "Step {step-io} begins to formalize the model, starting with its\ninput and output behavior.  If we eventually plan to develop an\nimplementation of our FSM as a digital system (which is not the \nonly choice, of course!), all input and output\nmust consist of bits.  Often, input and/or output specifications\nmay need to match other digital systems to which we plan to connect\nour FSM.  In fact, { most problems in developing large digital systems\ntoday arise because of incompatibilities when composing two or more\nseparately designed pieces} (or { modules}) into an integrated system.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the goal of step {step-io}?",
+      "answer": "\nThe goal of step {step-io} is to formalize the model's input and output behavior."
+    }
+  },
+  {
+    "textbook-paragraph": "Step {step-io} begins to formalize the model, starting with its\ninput and output behavior.  If we eventually plan to develop an\nimplementation of our FSM as a digital system (which is not the \nonly choice, of course!), all input and output\nmust consist of bits.  Often, input and/or output specifications\nmay need to match other digital systems to which we plan to connect\nour FSM.  In fact, { most problems in developing large digital systems\ntoday arise because of incompatibilities when composing two or more\nseparately designed pieces} (or { modules}) into an integrated system.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does one formalize the model's input and output behavior?",
+      "answer": "\nOne can formalize the model's input and output behavior by specifying the input and output signals in terms of their bit values."
+    }
+  },
+  {
+    "textbook-paragraph": "Once we know the I/O behavior for our FSM, in Step {step-complete}\nwe start to make\nany implicit assumptions clear and to make any other decisions\nnecessary to the design.  Occasionally, we may choose to leave\nsomething undecided in the hope of simplifying the design with\n``don't care'' entries in the logic formulation.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the next step after making implicit assumptions clear and making other decisions necessary to the design in FSM?\n\nA. We start to make any implicit assumptions clear and to make any other decisions necessary to the design.\nB. Occasionally, we may choose to leave something undecided in the hope of simplifying the design with ``don't care'' entries in the logic formulation.\nC. We check our work by retracing all possible states and inputs/outputs for each state transition until we are convinced that our FSM will work as intended for all possible input strings.\nD. We implement our FSM by drawing a state diagram and writing Verilog code or using a hardware description language (HDL) of our choice.",
+      "answer": "\nThe next step after making implicit assumptions clear and making other decisions necessary to the design in FSM is to check our work by retracing all possible states and inputs/outputs for each state transition until we are convinced that our FSM will work as intended for all possible input strings."
+    }
+  },
+  {
+    "textbook-paragraph": "Once we know the I/O behavior for our FSM, in Step {step-complete}\nwe start to make\nany implicit assumptions clear and to make any other decisions\nnecessary to the design.  Occasionally, we may choose to leave\nsomething undecided in the hope of simplifying the design with\n``don't care'' entries in the logic formulation.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the I/O behavior for our FSM?",
+      "answer": "\nThe I/O behavior for our FSM is that it will take in an input, and based on that input, it will either output a 0 or a 1."
+    }
+  },
+  {
+    "textbook-paragraph": "Let's begin with a two-bit Gray code counter with no inputs.\nAs we mentioned in Notes Set 2.1, a Gray code is a cycle over all\nbit patterns of a certain length in which consecutive patterns differ\nin exactly one bit.",
+    "GPT-3-Generations": {
+      "question": "\n\n1. What is a Gray code? \nA. A cycle over all bit patterns of a certain length in which consecutive patterns differ in exactly one bit.\nB. A code that is used to send data over a noisy channel\nC. A way of representing numbers using a balanced ternary system\nD. None of the above",
+      "answer": "\nA Gray code is a cycle over all bit patterns of a certain length in which consecutive patterns differ in exactly one bit."
+    }
+  },
+  {
+    "textbook-paragraph": "Let's begin with a two-bit Gray code counter with no inputs.\nAs we mentioned in Notes Set 2.1, a Gray code is a cycle over all\nbit patterns of a certain length in which consecutive patterns differ\nin exactly one bit.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is a two-bit Gray code counter?",
+      "answer": "\nA two-bit Gray code counter is a binary counter that cycles through all four possible combinations of two bits, in which each successive combination differs from the previous one in only one bit."
+    }
+  },
+  {
+    "textbook-paragraph": "For simplicity, our first few examples are based on counters and\nuse the internal state\nof the FSM as the output values.  You should already know\nhow to design combinational logic for the outputs if it were necessary.",
+    "GPT-3-Generations": {
+      "question": "\n\nHow does an FSM use its internal state as output values?",
+      "answer": "\nThe FSM uses its internal state as output values by taking the current state and outputting it as a binary number. This is done by using a truth table to determine the output for each state."
+    }
+  },
+  {
+    "textbook-paragraph": "The inputs to a counter, if any, are typically limited to functions\nsuch as starting and stopping the counter, controlling the counting \ndirection, and resetting the counter to a particular state.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat are the three inputs typically given to a counter?",
+      "answer": "\nThe inputs to a counter are typically a clock signal, a reset signal, and a load signal."
+    }
+  },
+  {
+    "textbook-paragraph": "We then use the next-state logic to develop the implementation\nshown on the far right, completing our first counter design.",
+    "GPT-3-Generations": {
+      "question": "\n\n1. What is the next-state logic?\nA. A type of computer memory\nB. A way of designing digital circuits\nC. A method of programming software\nD. None of the above",
+      "answer": "\nThe next-state logic is a way of designing digital circuits. It is a method of programming software that uses the next-state logic to generate the next state of the circuit."
+    }
+  },
+  {
+    "textbook-paragraph": "We then use the next-state logic to develop the implementation\nshown on the far right, completing our first counter design.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the implementation of the counter design?",
+      "answer": "\nThe implementation of the counter design is to use the next-state logic to develop the implementation shown on the far right, completing our first counter design."
+    }
+  },
+  {
+    "textbook-paragraph": "Now we'll add a third bit to our counter, but again use a Gray code\nas the basis for the state sequence.",
+    "GPT-3-Generations": {
+      "question": "\n\nQ: What is the main advantage of using a Gray code as the basis for the state sequence?\n\nA. It is easy to generate the next state in the sequence.\nB. It minimizes the number of state transitions.\nC. It is easy to decode.\nD. All of the above.",
+      "answer": "\nThe main advantage of using a Gray code as the basis for the state sequence is that it minimizes the number of state transitions."
+    }
+  },
+  {
+    "textbook-paragraph": "Now we'll add a third bit to our counter, but again use a Gray code\nas the basis for the state sequence.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhat is the Gray code?",
+      "answer": "\nThe Gray code is a sequence of binary numbers that are used to represent different states in a system. The code is named after its inventor, Frank Gray."
+    }
+  },
+  {
+    "textbook-paragraph": "Looking at the counter's implementation diagram, notice that the vertical\nlines carrying the current state values and their inverses back to the\nnext state\nlogic inputs have been carefully ordered to simplify\nunderstanding the diagram.  In particular, they are ordered from\nleft to right (on the left side of the figure) as \n{{S_0}}S_0{{S_1}}S_1{{S_2}}S_2.\nWhen designing any logic diagram, be sure to make use of a reasonable\norder so as to make it easy for someone (including yourself!) to read \nand check the correctness of the logic.",
+    "GPT-3-Generations": {
+      "question": "\n\n1. What is the main reason for ordering the vertical lines in the counter's implementation diagram?\nA. To make it easy to read and check the correctness of the logic\nB. To simplify understanding the diagram\nC. To make use of a reasonable order",
+      "answer": "\nB. To simplify understanding the diagram"
+    }
+  },
+  {
+    "textbook-paragraph": "Looking at the counter's implementation diagram, notice that the vertical\nlines carrying the current state values and their inverses back to the\nnext state\nlogic inputs have been carefully ordered to simplify\nunderstanding the diagram.  In particular, they are ordered from\nleft to right (on the left side of the figure) as \n{{S_0}}S_0{{S_1}}S_1{{S_2}}S_2.\nWhen designing any logic diagram, be sure to make use of a reasonable\norder so as to make it easy for someone (including yourself!) to read \nand check the correctness of the logic.",
+    "GPT-3-Generations": {
+      "question": "\n\nWhy is it important to have a reasonable order when designing a logic diagram?",
+      "answer": "\nWhen designing any logic diagram, it is important to have a reasonable order so as to make it easy for someone (including yourself!) to read and check the correctness of the logic. This is because a well-ordered diagram will be easier to understand and will be less likely to contain errors."
+    }
+  }
+]
