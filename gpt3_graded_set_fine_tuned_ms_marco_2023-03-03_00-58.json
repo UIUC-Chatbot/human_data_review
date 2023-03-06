@@ -1,0 +1,182 @@
+[
+    {
+        "Question": "What does a two-bit Gray code represent?",
+        "Original-Answer": "A two-bit Gray code is a binary code used to represent numbers in which adjacent values differ in only one bit. For example, the numbers 0, 1, 2, and 3 can be represented as 00, 01, 11, and 10.",
+        "Chatbot-Generated-Answer": "0 or 1)",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What does the uninterrupted counting cycle label mean?",
+        "Original-Answer": "The uninterrupted counting cycle is an infinite loop that continues until the H button is pressed.",
+        "Chatbot-Generated-Answer": "The uninterrupted counting cycle label means that the computer will continue processing instructions, carrying out the instruction cycle again and again, ad nauseum.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What do the buttons 'halt' and 'go' do?",
+        "Original-Answer": "\"The 'halt' button makes the machine stop and the 'go' button makes it start again.\"",
+        "Chatbot-Generated-Answer": "A user can stop the counter in any state by pressing the “halt” but- ton, causing the counter to retain its current value until the user presses the “go” button.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What do the buttons 'halt' and 'go' do?",
+        "Original-Answer": "\"The 'halt' button halts the cycle and the 'go' button restarts it.\"",
+        "Chatbot-Generated-Answer": "A user can stop the counter in any state by pressing the “halt” but- ton, causing the counter to retain its current value until the user presses the “go” button.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What do the buttons 'halt' and 'go' do?",
+        "Original-Answer": "\"The 'halt' button makes the machine stop and the 'go' button makes it start again.\"",
+        "Chatbot-Generated-Answer": "A user can stop the counter in any state by pressing the “halt” but- ton, causing the counter to retain its current value until the user presses the “go” button.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of an FSM?",
+        "Original-Answer": "The purpose of an FSM is to model the behavior of a system.",
+        "Chatbot-Generated-Answer": "An FSM comprises five parts: a finite set of states, a set of possible inputs, a set of possible outputs, a set of transition rules, and methods for calculating outputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of an FSM?",
+        "Original-Answer": "The purpose of an FSM is to design a counter that can be stopped and started.",
+        "Chatbot-Generated-Answer": "An FSM comprises five parts: a finite set of states, a set of possible inputs, a set of possible outputs, a set of transition rules, and methods for calculating outputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of an FSM?",
+        "Original-Answer": "The purpose of an FSM is to model the behavior of a system.",
+        "Chatbot-Generated-Answer": "An FSM comprises five parts: a finite set of states, a set of possible inputs, a set of possible outputs, a set of transition rules, and methods for calculating outputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What are the benefits of using an FSM?",
+        "Original-Answer": "3. FSMs are versatile and can be used to model a wide variety of systems. For example, FSMs can be used to model digital circuits, communication protocols, and computer programs.",
+        "Chatbot-Generated-Answer": "An FSM is a model for understanding the behavior of a system by describin g the system as occupying one of a finite set of states, moving betwe en these states in response to external inputs, and producing external outputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of the ``halt'' button?",
+        "Original-Answer": "The ``halt'' button is used to stop the counter. If the counter is halted, the ``halt'' button has no additional effect. The table implies that if the user presses the ``halt'' button, the counter will retain its current value until the user presses the ``go'' button.",
+        "Chatbot-Generated-Answer": "oses the counter to stop when the user presses “halt” and to resume counting when the user presses “go.”",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of the ``halt'' button?",
+        "Original-Answer": "To stop and start the counter.",
+        "Chatbot-Generated-Answer": "oses the counter to stop when the user presses “halt” and to resume counting when the user presses “go.”",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of the ``halt'' button?",
+        "Original-Answer": "The ``halt'' button is used to stop the counter. If the counter is halted, the ``halt'' button has no additional effect. The table implies that if the user presses the ``halt'' button, the counter will retain its current value until the user presses the ``go'' button.",
+        "Chatbot-Generated-Answer": "oses the counter to stop when the user presses “halt” and to resume counting when the user presses “go.”",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " How does an FSM work?",
+        "Original-Answer": "A finite state machine (FSM) is a mathematical model of computation used to design both computer programs and sequential logic circuits. It is conceived as an abstract machine that can be in one of a finite number of user-specified states. An FSM is defined by a list of its states, its initial state, and the conditions for each transition.'",
+        "Chatbot-Generated-Answer": "An FSM comprises five parts: a finite set of states, a set of possible inputs, a set of possible outputs, a set of transition rules, and methods for calculating outputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " How does an FSM work?",
+        "Original-Answer": "A finite state machine (FSM) is a mathematical model of computation used to design both computer programs and sequential logic circuits. It is conceived as an abstract machine that can be in one of a finite number of user-specified states. An FSM is defined by a list of its states, its initial state, and the conditions for each transition.'",
+        "Chatbot-Generated-Answer": "An FSM comprises five parts: a finite set of states, a set of possible inputs, a set of possible outputs, a set of transition rules, and methods for calculating outputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the difference between a next-state table and a transition diagram?",
+        "Original-Answer": "The primary difference between a next-state table and a transition diagram is that a next-state table lists the states, while each of the other columns lists states to which the FSM transitions after a clock cycle for a particular input combination. A transition diagram, on the other hand, provides exactly the same information in graphical form with circles representing states (as labeled) and arcs representing transitions from one state to another based on an input combination (which is used to label the arc).",
+        "Chatbot-Generated-Answer": "A next-state table is a table that specifies which state the system is coming from and which state it is going to. We refer to the state the system is coming from as thecurrent state,and the state it is going to as thenext state.T h ec o m b i n a t i o nl o c kh a se i g h ts t a t etransitions. Associated with each transition is the input that causes the transitionfrom the current state to the next state. For example, R13 causes the transitionfrom state A to state B.Ac o u p l eo ft h i n g sa r ew o r t hn o t i n g.F i r s t,i ti su s u a l l yt h ec a s et h a tf r o macurrent state",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What is the difference between a next-state table and a transition diagram?",
+        "Original-Answer": "A next-state table lists the states, while each of the other columns lists states to which the FSM transitions after a clock cycle for a particular input combination. A transition diagram provides exactly the same information in graphical form, with circles representing states (as labeled) and arcs representing transitions from one state to another based on an input combination (which is used to label the arc).",
+        "Chatbot-Generated-Answer": "A next-state table is a table that specifies which state the system is coming from and which state it is going to. We refer to the state the system is coming from as thecurrent state,and the state it is going to as thenext state.T h ec o m b i n a t i o nl o c kh a se i g h ts t a t etransitions. Associated with each transition is the input that causes the transitionfrom the current state to the next state. For example, R13 causes the transitionfrom state A to state B.Ac o u p l eo ft h i n g sa r ew o r t hn o t i n g.F i r s t,i ti su s u a l l yt h ec a s et h a tf r o macurrent state",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What is the difference between a next-state table and a transition diagram?",
+        "Original-Answer": "The primary difference between a next-state table and a transition diagram is that a next-state table lists the states, while each of the other columns lists states to which the FSM transitions after a clock cycle for a particular input combination. A transition diagram, on the other hand, provides exactly the same information in graphical form with circles representing states (as labeled) and arcs representing transitions from one state to another based on an input combination (which is used to label the arc).",
+        "Chatbot-Generated-Answer": "A next-state table is a table that specifies which state the system is coming from and which state it is going to. We refer to the state the system is coming from as thecurrent state,and the state it is going to as thenext state.T h ec o m b i n a t i o nl o c kh a se i g h ts t a t etransitions. Associated with each transition is the input that causes the transitionfrom the current state to the next state. For example, R13 causes the transitionfrom state A to state B.Ac o u p l eo ft h i n g sa r ew o r t hn o t i n g.F i r s t,i ti su s u a l l yt h ec a s et h a tf r o macurrent state",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What is the difference between 'counting' and 'halted' states?",
+        "Original-Answer": "The 'counting' state represents uninterrupted counting, in which the counter cycles through these states indefinitely. A user can stop the counter in any state by pressing the ``halt'' button, causing the counter to retain its current value until the user presses the ``go'' button. The 'halted' state represents when a user has pressed the ``halt'' button, and the counter is not counting.",
+        "Chatbot-Generated-Answer": "The upper four states represent uninterrupted counting, in which the counter cycles through these states indefinitely.",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What does pressing the 'halt' button do when the counter is in a 'halted' state?",
+        "Original-Answer": "Pressing the 'halt' button when the counter is in a 'halted' state has no effect.",
+        "Chatbot-Generated-Answer": "resets the counter",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What does pressing the 'halt' button do when the counter is in a 'halted' state?",
+        "Original-Answer": "Pressing the 'halt' button has no effect when the counter is in a 'halted' state.",
+        "Chatbot-Generated-Answer": "resets the counter",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What does pressing the 'halt' button do when the counter is in a 'halted' state?",
+        "Original-Answer": "Pressing the 'halt' button when the counter is in a 'halted' state has no effect.",
+        "Chatbot-Generated-Answer": "resets the counter",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " How can the FSM ever get into the unexpected states?",
+        "Original-Answer": "The initial state of the three flip-flops in our implementation is unknown.",
+        "Chatbot-Generated-Answer": "The FSM can get into the unexpected states by a combination of inputs.",
+        "GPT-3-Evaluation": "Better"
+    },
+    {
+        "Question": " What is the purpose of an abstract model?",
+        "Original-Answer": "The purpose of an abstract model is to provide a simplified representation of a system. Abstract models are often used to design and analyze complex systems.",
+        "Chatbot-Generated-Answer": "To better understand their job",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What does the 'x' mean in the K-map?",
+        "Original-Answer": "The 'x' in the K-map indicates a \"don't care\" condition. This means that the output will be the same regardless of whether the input is a 0 or a 1.",
+        "Chatbot-Generated-Answer": "x",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What does the 'x' mean in the K-map?",
+        "Original-Answer": "The 'x' means that the bit doesn't matter and can be a 0 or 1.",
+        "Chatbot-Generated-Answer": "x",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What does the 'x' mean in the K-map?",
+        "Original-Answer": "The 'x' in the K-map indicates a \"don't care\" condition. This means that the output will be the same regardless of whether the input is a 0 or a 1.",
+        "Chatbot-Generated-Answer": "x",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " Given that we need three flip-flops, can the counter's internal state directly be used as our output values?",
+        "Original-Answer": "Yes, the counter's internal state can be used as our output values because the colors we need to produce are all unique bit patterns.",
+        "Chatbot-Generated-Answer": "no",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What is the purpose of using a Gray code basis for the state sequence?",
+        "Original-Answer": "The Gray code basis for the state sequence is used to simplify the design complexity by explicitly identifying and making use of common algebraic terms and sub-expressions for different outputs.",
+        "Chatbot-Generated-Answer": "Gray code basis for the state sequence",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What is the purpose of using a Gray code basis for the state sequence?",
+        "Original-Answer": "The Gray code basis for the state sequence simplifies the design of the next-state logic.",
+        "Chatbot-Generated-Answer": "Gray code basis for the state sequence",
+        "GPT-3-Evaluation": "Worse"
+    },
+    {
+        "Question": " What is the purpose of using a Gray code basis for the state sequence?",
+        "Original-Answer": "The Gray code basis for the state sequence is used to simplify the design complexity by explicitly identifying and making use of common algebraic terms and sub-expressions for different outputs.",
+        "Chatbot-Generated-Answer": "Gray code basis for the state sequence",
+        "GPT-3-Evaluation": "Worse"
+    }
+]
